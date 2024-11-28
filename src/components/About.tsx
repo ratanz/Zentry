@@ -49,7 +49,6 @@ const About = () => {
         <div className='mask-clip-path about-image'>
             <img src="/img/about.webp" alt="background" className='absoulte left-0 top-0 size-full object-cover'/>
         </div>
-
       </div>
     </div>
   )
