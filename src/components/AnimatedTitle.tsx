@@ -18,7 +18,7 @@ const AnimatedTitle = ({ title, containterClass }: { title: string, containterCl
 
             titleAnimation.to('.animated-word', {
                 opacity : 1,
-                transform : 'translate3d(0,0,0) rotateY(10deg) rotateX(5deg)',
+                transform : 'translate3d(0,0,0) rotateY(0deg) rotateX(0deg)',
                 scrub : 1,
                 duration : 0.5,
                 stagger : 0.1
