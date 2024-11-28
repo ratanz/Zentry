@@ -25,7 +25,7 @@ const About = () => {
             height : '100vh',
             borderRadius : 0,               
         })
-    })
+    },[])
 
   return (
     <div id='about' className='min-h-screen w-screen '>
