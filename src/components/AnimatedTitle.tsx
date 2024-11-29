@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import gsap from 'gsap'
 
-const AnimatedTitle = ({ title, containterClass }: { title: string, containterClass: string }) => {
+const AnimatedTitle = ({ title, containerClass, sectionId }: { title: string, containerClass: string, sectionId?: string }) => {
 
     const containerRef = useRef<HTMLDivElement>(null);
 
@@ -31,7 +31,7 @@ const AnimatedTitle = ({ title, containterClass }: { title: string, containterCl
     return (
         <div 
         ref={containerRef}
-        className={`animated-title ${containterClass} `}>
+        className={`animated-title ${containerClass} `}>
             {title.split('<br/>').map((line, index) => (
                 <div key={index} className='flex-center max-w-full flex-wrap gap-2 px-10 md:gap-3'>
                     {line.split(' ').map((word, i) => (
