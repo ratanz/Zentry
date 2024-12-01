@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Button from './Button'
-import { TiLocation, TiLocationArrow } from 'react-icons/ti'
+import { TiLocationArrow } from 'react-icons/ti'
 import { BsFillPauseFill, BsFillPlayFill } from 'react-icons/bs'
 import { useWindowScroll } from 'react-use'
 import gsap from 'gsap'
@@ -18,7 +18,6 @@ const navItems = [
 const Navbar = () => {
 
   const [isAudioPlaying, setIsAudioPlaying] = useState(false)
-  const [isIndicatorActive, setIsIndicatorActive] = useState(false)
   const [lastScrollY, setLastScrollY] = useState(0)
   const [isNavVisible, setIsNavVisible] = useState(true)
 
@@ -28,7 +27,6 @@ const Navbar = () => {
   // audio playing logic.
   const toggleAudioIndicator = () => {
     setIsAudioPlaying((prev) => !prev)
-    setIsIndicatorActive((prev) => !prev)
   }
 
   useEffect(() => {
@@ -99,9 +97,6 @@ const Navbar = () => {
                   {isAudioPlaying ? <BsFillPauseFill size={20} /> : <BsFillPlayFill size={20} />}
                 </span>
                 <audio ref={audioElementRef} src="/audio/loop.mp3" className='hidden' loop />
-                {/* {[1, 2, 3, 4].map((bar) => (
-                  <div key={bar} className={`indicator-line ${isIndicatorActive ? 'active' : ''}`} style={{ animationDelay: `${bar * 0.1}s` }} />
-                ))} */}
               </button>
             </div>
 

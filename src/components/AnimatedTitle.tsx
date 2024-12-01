@@ -1,7 +1,7 @@
-import React, { useRef, useEffect } from 'react'
+import  { useRef, useEffect } from 'react'
 import gsap from 'gsap'
 
-const AnimatedTitle = ({ title, containerClass, sectionId }: { title: string, containerClass: string, sectionId?: string }) => {
+const AnimatedTitle = ({ title, containerClass,  }: { title: string, containerClass: string, sectionId?: string }) => {
 
     const containerRef = useRef<HTMLDivElement>(null);
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaDiscord, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 const links = [
