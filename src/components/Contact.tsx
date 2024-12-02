@@ -36,7 +36,7 @@ const Contact = () => {
 
 
                 <div className='flex flex-col items-center text-center'>
-                    <p className='mb-2 font-general text-[12px] uppercase '>
+                    <p className='mb-2 p-4 font-general text-[12px] uppercase '>
                         Join Zentry.
                     </p>
                     <p className='special-font mt-6 w-full font-zentry text-6xl leading-[0.9] md:text[6rem] '>
