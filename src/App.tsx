@@ -15,8 +15,6 @@ const App = () => {
   // Lenis
   useEffect(() => {
     const lenis = new Lenis({
-      lerp : 0.055,
-      
     })
 
     function raf(time: number) {
